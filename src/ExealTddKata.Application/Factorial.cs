@@ -4,6 +4,11 @@ public static class Factorial
 {
     public static int Calc(int input)
     {
+        if (input == 0)
+        {
+            return 1;
+        }
+        
         if (input == 2)
         {
             return 2;
