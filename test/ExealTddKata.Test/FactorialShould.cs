@@ -25,4 +25,11 @@ public class FactorialShould
         int result = Factorial.Calc(3);
         result.Should().Be(6);
     }
+    
+    [Test]
+    public void ReturnTwentyFourWhenInputIsThree()
+    {
+        int result = Factorial.Calc(4);
+        result.Should().Be(24);
+    }
 }
