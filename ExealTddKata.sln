@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Info", "00 - Info", "{372936D5-9337-43E1-8EEF-118E170390C6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Application", "01 - Application", "{86B6597F-C434-4D97-AA4B-1C734AD1823B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Test", "02 - Test", "{B1C0CE98-D925-4AB6-8928-B9A60EF7D3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExealTddKata.Application", "src\ExealTddKata.Application\ExealTddKata.Application.csproj", "{F1803D9C-42ED-4607-B9E0-BB0956411DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExealTddKata.Test", "test\ExealTddKata.Test\ExealTddKata.Test.csproj", "{2477F6B6-686C-47CA-A251-1568328F6E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1803D9C-42ED-4607-B9E0-BB0956411DF7} = {86B6597F-C434-4D97-AA4B-1C734AD1823B}
+		{2477F6B6-686C-47CA-A251-1568328F6E8C} = {B1C0CE98-D925-4AB6-8928-B9A60EF7D3CA}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1803D9C-42ED-4607-B9E0-BB0956411DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1803D9C-42ED-4607-B9E0-BB0956411DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1803D9C-42ED-4607-B9E0-BB0956411DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1803D9C-42ED-4607-B9E0-BB0956411DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2477F6B6-686C-47CA-A251-1568328F6E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2477F6B6-686C-47CA-A251-1568328F6E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2477F6B6-686C-47CA-A251-1568328F6E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2477F6B6-686C-47CA-A251-1568328F6E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
