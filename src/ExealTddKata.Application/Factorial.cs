@@ -4,26 +4,12 @@ public static class Factorial
 {
     public static int Calc(int input)
     {
-        if (input == 0)
+        int total = 1; 
+        for (int number = 1; number <= input; number++)
         {
-            return 1;
-        }
-        
-        if (input == 2)
-        {
-            return 2;
+            total *= number;
         }
 
-        if (input == 3)
-        {
-            return 6;
-        }
-
-        if (input == 4)
-        {
-            return 24;
-        }
-        
-        return 1;
+        return total;
     }
 }
