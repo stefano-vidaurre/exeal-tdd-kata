@@ -18,4 +18,11 @@ public class FactorialShould
         int result = Factorial.Calc(2);
         result.Should().Be(2);
     }
+    
+    [Test]
+    public void ReturnSixWhenInputIsThree()
+    {
+        int result = Factorial.Calc(3);
+        result.Should().Be(6);
+    }
 }
