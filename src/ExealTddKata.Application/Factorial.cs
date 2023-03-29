@@ -13,6 +13,11 @@ public static class Factorial
         {
             return 6;
         }
+
+        if (input == 4)
+        {
+            return 24;
+        }
         
         return 1;
     }
