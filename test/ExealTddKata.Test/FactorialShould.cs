@@ -11,4 +11,11 @@ public class FactorialShould
         int result = Factorial.Calc(0);
         result.Should().Be(1);
     }
+    
+    [Test]
+    public void ReturnTwoWhenInputIsTwo()
+    {
+        int result = Factorial.Calc(2);
+        result.Should().Be(2);
+    }
 }
