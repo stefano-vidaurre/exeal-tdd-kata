@@ -12,7 +12,6 @@ public class PasswordValidatorShould
         result.Should().Be((false, "Password must be at least 8 characters"));
     }
     
-    // TODO: Al menos 2 numeros
     [Test]
     public void ReportNumbersError()
     {
