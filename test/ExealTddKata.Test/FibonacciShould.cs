@@ -39,4 +39,11 @@ public class FibonacciShould
         int result = Fibonacci.Calc(4);
         result.Should().Be(3);
     }
+
+    [Test]
+    public void ReturnFiveWhenInputIsFive()
+    {
+        int result = Fibonacci.Calc(5);
+        result.Should().Be(5);
+    }
 }
