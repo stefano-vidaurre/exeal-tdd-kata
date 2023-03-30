@@ -4,31 +4,16 @@ public static class Fibonacci
 {
     public static int Calc(int input)
     {
+        if (input == 0)
+        {
+            return 0;
+        }
+        
         if (input == 1)
         {
             return 1;
         }
-
-        if (input == 2)
-        {
-            return 1;
-        }
-
-        if (input == 3)
-        {
-            return 2;
-        }
         
-        if (input == 4)
-        {
-            return 3;
-        }
-
-        if (input == 5)
-        {
-            return 5;
-        }
-        
-        return 0;
+        return Calc(input - 1) + Calc(input - 2);
     }
 }
