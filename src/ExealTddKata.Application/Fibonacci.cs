@@ -4,6 +4,6 @@ public static class Fibonacci
 {
     public static int Calc()
     {
-        throw new NotImplementedException();
+        return 0;
     }
 }
