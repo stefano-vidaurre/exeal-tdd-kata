@@ -19,6 +19,11 @@ public static class Fibonacci
             return 2;
         }
         
+        if (input == 4)
+        {
+            return 3;
+        }
+        
         return 0;
     }
 }
