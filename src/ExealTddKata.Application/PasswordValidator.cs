@@ -4,6 +4,6 @@ public static class PasswordValidator
 {
     public static (bool, string) Validate(string pass)
     {
-        throw new NotImplementedException();
+        return (false, "Password must be at least 8 characters");
     }
 }
