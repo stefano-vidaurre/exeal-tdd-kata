@@ -18,5 +18,11 @@ public class FibonacciShould
         int result = Fibonacci.Calc(1);
         result.Should().Be(1);
     }
-    // TODO: Casos n > 1
+
+    [Test]
+    public void ResturnOneWhenInputIsTwo()
+    {
+        int result = Fibonacci.Calc(2);
+        result.Should().Be(1);
+    }
 }
