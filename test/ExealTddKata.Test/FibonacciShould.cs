@@ -20,9 +20,16 @@ public class FibonacciShould
     }
 
     [Test]
-    public void ResturnOneWhenInputIsTwo()
+    public void ReturnOneWhenInputIsTwo()
     {
         int result = Fibonacci.Calc(2);
         result.Should().Be(1);
+    }
+
+    [Test]
+    public void ReturnTwoWhenInputIsThree()
+    {
+        int result = Fibonacci.Calc(3);
+        result.Should().Be(2);
     }
 }

@@ -8,6 +8,11 @@ public static class Fibonacci
         {
             return 1;
         }
+
+        if (input == 2)
+        {
+            return 1;
+        }
         
         return 0;
     }
