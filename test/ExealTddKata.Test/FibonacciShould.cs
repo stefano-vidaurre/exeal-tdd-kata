@@ -32,4 +32,11 @@ public class FibonacciShould
         int result = Fibonacci.Calc(3);
         result.Should().Be(2);
     }
+
+    [Test]
+    public void ReturnThreeWhenInputIsFour()
+    {
+        int result = Fibonacci.Calc(4);
+        result.Should().Be(3);
+    }
 }
