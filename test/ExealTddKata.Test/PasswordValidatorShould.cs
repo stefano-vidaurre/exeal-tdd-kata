@@ -8,7 +8,7 @@ public class PasswordValidatorShould
     [Test]
     public void ReportCharactersLongError()
     {
-        (bool, string) result = PasswordValidator.Validate("");
+        (bool, string) result = PasswordValidator.Validate("1234567");
         result.Should().Be((false, "Password must be at least 8 characters"));
     }
     
