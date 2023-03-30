@@ -5,7 +5,6 @@ namespace ExealTddKata.Test;
 
 public class FibonacciShould
 {
-    // TODO: Caso 0
     [Test]
     public void ReturnZeroWhenInputIsZero()
     {
@@ -13,6 +12,11 @@ public class FibonacciShould
         result.Should().Be(0);
     }
     
-    // TODO: Caso 1
+    [Test]
+    public void ReturnOneWhenInputIsOne()
+    {
+        int result = Fibonacci.Calc();
+        result.Should().Be(1);
+    }
     // TODO: Casos n > 1
 }
