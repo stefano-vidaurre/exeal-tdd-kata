@@ -14,10 +14,10 @@ public class CitiesShould
     }
     
     [Test]
-    public void NotFindAnyCitiesWhenTheInputLengthIsLessThanTree()
+    public void NotFindAnyCitiesWhenTheInputLengthIsLessThanTwo()
     {
         Cities cities = new Cities();
-        IEnumerable<string> result = cities.Find("Pa");
+        IEnumerable<string> result = cities.Find("P");
         result.Should().BeEmpty();
     }
     
