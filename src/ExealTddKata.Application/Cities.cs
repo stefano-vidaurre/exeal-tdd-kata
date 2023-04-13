@@ -15,6 +15,11 @@ public class Cities
 
     public IEnumerable<string> Find(string input)
     {
+        if (input == "*")
+        {
+            return _cities;
+        }
+        
         if (input.Length < 2)
         {
             return Enumerable.Empty<string>();
