@@ -36,4 +36,12 @@ public class CitiesShould
         IEnumerable<string> result = cities.Find("Va");
         result.Should().Contain("Valencia");
     }
+    
+    [Test]
+    public void FindBudapestWhenTheInputIsBu()
+    {
+        Cities cities = new Cities();
+        IEnumerable<string> result = cities.Find("Bu");
+        result.Should().Contain("Budapest");
+    }
 }
