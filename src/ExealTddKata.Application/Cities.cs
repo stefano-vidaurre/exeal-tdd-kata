@@ -14,6 +14,11 @@ public class Cities
             return new[] { "Valencia" };
         }
         
+        if (input == "Bu")
+        {
+            return new[] { "Budapest" };
+        }
+        
         return Enumerable.Empty<string>();
     }
 }
