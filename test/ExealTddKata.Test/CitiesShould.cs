@@ -22,10 +22,18 @@ public class CitiesShould
     }
     
     [Test]
-    public void FindParisWhenTheInputIsPar()
+    public void FindParisWhenTheInputIsPa()
     {
         Cities cities = new Cities();
-        IEnumerable<string> result = cities.Find("Par");
+        IEnumerable<string> result = cities.Find("Pa");
         result.Should().Contain("Paris");
+    }
+    
+    [Test]
+    public void FindValenciaWhenTheInputIsVa()
+    {
+        Cities cities = new Cities();
+        IEnumerable<string> result = cities.Find("Va");
+        result.Should().Contain("Valencia");
     }
 }
