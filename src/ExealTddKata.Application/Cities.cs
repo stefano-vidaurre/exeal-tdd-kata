@@ -4,6 +4,6 @@ public class Cities
 {
     public IEnumerable<string> Find(string input)
     {
-        throw new NotImplementedException();
+        return Enumerable.Empty<string>();
     }
 }
