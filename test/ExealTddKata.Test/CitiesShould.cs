@@ -67,4 +67,14 @@ public class CitiesShould
         
         result.Should().Contain("Budapest");
     }
+    
+    
+    [Test]
+    public void FindBudapestWhenTheInputIsNotTheStart()
+    {
+        Cities cities = new Cities();
+        IEnumerable<string> result = cities.Find("dap");
+        
+        result.Should().Contain("Budapest");
+    }
 }
