@@ -67,8 +67,7 @@ public class CitiesShould
         
         result.Should().Contain("Budapest");
     }
-    
-    
+
     [Test]
     public void FindBudapestWhenTheInputIsNotTheStart()
     {
@@ -76,5 +75,19 @@ public class CitiesShould
         IEnumerable<string> result = cities.Find("dap");
         
         result.Should().Contain("Budapest");
+    }
+
+    [Test]
+    public void FindAllCitiesWhenTheInputIsAsterisk()
+    {
+        Cities cities = new Cities();
+        IEnumerable<string> expectedResult = new[]
+        {
+            "Paris", "Budapest", "Skopje", "Rotterdam", "Valencia", "Vancouver", "Amsterdam", "Vienna", "Sydney",
+            "New York City", "London", "Bangkok", "Hong Kong", "Dubai", "Rome", "Istanbul"
+        };
+        IEnumerable<string> result = cities.Find("*");
+
+        result.Should().Contain(expectedResult);
     }
 }
