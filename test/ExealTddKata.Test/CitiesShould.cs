@@ -58,4 +58,13 @@ public class CitiesShould
         result.Should().Contain("Vancouver");
         result.Should().Contain("Valencia");
     }
+    
+    [Test]
+    public void FindBudapestWhenTheInputIsOnlyLowerCase()
+    {
+        Cities cities = new Cities();
+        IEnumerable<string> result = cities.Find("bu");
+        
+        result.Should().Contain("Budapest");
+    }
 }
