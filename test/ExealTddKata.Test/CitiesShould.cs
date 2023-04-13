@@ -10,6 +10,7 @@ public class CitiesShould
     {
         Cities cities = new Cities();
         IEnumerable<string> result = cities.Find("");
+        
         result.Should().BeEmpty();
     }
     
@@ -18,6 +19,7 @@ public class CitiesShould
     {
         Cities cities = new Cities();
         IEnumerable<string> result = cities.Find("P");
+        
         result.Should().BeEmpty();
     }
     
@@ -34,6 +36,7 @@ public class CitiesShould
     {
         Cities cities = new Cities();
         IEnumerable<string> result = cities.Find("Va");
+        
         result.Should().Contain("Valencia");
     }
     
@@ -42,6 +45,17 @@ public class CitiesShould
     {
         Cities cities = new Cities();
         IEnumerable<string> result = cities.Find("Bu");
+        
         result.Should().Contain("Budapest");
+    }
+    
+    [Test]
+    public void FindVancouverAndValenciaWhenTheInputIsVa()
+    {
+        Cities cities = new Cities();
+        IEnumerable<string> result = cities.Find("Va");
+        
+        result.Should().Contain("Vancouver");
+        result.Should().Contain("Valencia");
     }
 }
