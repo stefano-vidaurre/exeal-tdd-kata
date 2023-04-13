@@ -20,6 +20,6 @@ public class Cities
             return Enumerable.Empty<string>();
         }
 
-        return _cities.Where(city => city.StartsWith(input, StringComparison.InvariantCultureIgnoreCase));
+        return _cities.Where(city => city.Contains(input, StringComparison.InvariantCultureIgnoreCase));
     }
 }
